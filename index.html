@@ -48,39 +48,10 @@
     </div>
 
 
-      <script>
-        
-let isCanvasVisible = false;
-
-function showCanvas() {
-  var canvas = document.getElementById('demo2');
-  if (isCanvasVisible) {
-    canvas.style.display = 'none';
-    isCanvasVisible = false;
-  } else {
-    canvas.style.display = 'block';
-    textImage.createTextImage({
-      canvas: canvas,
-      replaceText: '‱',
-      raduis: 6,
-      isGray: false,
-      source: {
-        video: 'The Other Side Of Paradise.mp4',
-        width: 500,
-        height: 300,
-      },
-    });
-    isCanvasVisible = true;
-  }
-}
 
 
 
-      </script>
 
-
-        <canvas id="demo1" style="display: none;"></canvas>
-        <canvas id="demo2" style="display: none;"></canvas>
 
         <script src="JS/script.js"></script>
         <script src="JS/PBomb.js"></script>
